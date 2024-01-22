@@ -69,13 +69,13 @@ let d_29 = 29
 let d_30 = 30
 let d_31 = 31
 
-dt_1.value = 1
+dt_1.value = 0
 dt_1.innerHTML = '1<Br>R$ ' + dt_1.value
 
-dt_2.value = 2
+dt_2.value = 0
 dt_2.innerHTML = '2<Br>R$ '+ dt_2.value
 
-dt_3.value = 3
+dt_3.value = 0
 dt_3.innerHTML = '3<Br>R$ '+ dt_3.value
 
 dt_4.value = 4
@@ -93,43 +93,43 @@ dt_7.innerHTML = '7<Br>R$ '+ dt_7.value
 dt_8.value = 8
 dt_8.innerHTML = '8<Br>R$ '+ dt_8.value
 
-dt_9.value = 9
+dt_9.value = 259
 dt_9.innerHTML = '9<Br>R$ '+ dt_9.value
 
-dt_10.value = 10
+dt_10.value = 269
 dt_10.innerHTML = '10<Br>R$ '+ dt_10.value
 
-dt_11.value = 11
+dt_11.value = 259
 dt_11.innerHTML = '11<Br>R$ '+ dt_11.value
 
-dt_12.value = 12
+dt_12.value = 249
 dt_12.innerHTML = '12<Br>R$ '+ dt_12.value
 
-dt_13.value = 13
+dt_13.value = 249
 dt_13.innerHTML = '13<Br>R$ '+ dt_13.value
 
-dt_14.value = 14
+dt_14.value = 219
 dt_14.innerHTML = '14<Br>R$ '+ dt_14.value
 
-dt_15.value = 15
+dt_15.value = 269
 dt_15.innerHTML = '15<Br>R$ '+ dt_15.value
 
-dt_16.value = 16
+dt_16.value = 269
 dt_16.innerHTML = '16<Br>R$ '+ dt_16.value
 
-dt_17.value = 17
+dt_17.value = 269
 dt_17.innerHTML = '17<Br>R$ '+ dt_17.value
 
-dt_18.value = 18
+dt_18.value = 269
 dt_18.innerHTML = '18<Br>R$ '+ dt_18.value
 
-dt_19.value = 19
+dt_19.value = 249
 dt_19.innerHTML = '19<Br>R$ '+ dt_19.value
 
-dt_20.value = 20
+dt_20.value = 249
 dt_20.innerHTML = '20<Br>R$ ' + dt_20.value
 
-dt_21.value = 21
+dt_21.value = 219
 dt_21.innerHTML = '21<Br>R$ '+ dt_21.value
 
 dt_22.value = 299
@@ -144,22 +144,22 @@ dt_24.innerHTML = '24<Br>R$ '+ dt_24.value
 dt_25.value = 319
 dt_25.innerHTML = '25<Br>R$ '+ dt_25.value
 
-dt_26.value = 26
+dt_26.value = 339
 dt_26.innerHTML = '26<Br>R$ '+ dt_26.value
 
-dt_27.value = 27
+dt_27.value = 339
 dt_27.innerHTML = '27<Br>R$ '+ dt_27.value
 
-dt_28.value = 28
+dt_28.value = 259
 dt_28.innerHTML = '28<Br>R$ '+ dt_28.value
 
-dt_29.value = 29
+dt_29.value = 269
 dt_29.innerHTML = '29<Br>R$ '+ dt_29.value
 
-dt_30.value = 30
+dt_30.value = 269
 dt_30.innerHTML = '30<Br>R$ '+ dt_30.value
 
-dt_31.value = 31
+dt_31.value = 269
 dt_31.innerHTML = '31<Br>R$ '+ dt_31.value
 
 
