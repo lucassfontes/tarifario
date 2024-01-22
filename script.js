@@ -132,16 +132,16 @@ dt_20.innerHTML = '20<Br>R$ ' + dt_20.value
 dt_21.value = 21
 dt_21.innerHTML = '21<Br>R$ '+ dt_21.value
 
-dt_22.value = 22
+dt_22.value = 299
 dt_22.innerHTML = '22<Br>R$ '+ dt_22.value
 
-dt_23.value = 23
+dt_23.value = 309
 dt_23.innerHTML = '23<Br>R$ '+ dt_23.value
 
-dt_24.value = 24
+dt_24.value = 309
 dt_24.innerHTML = '24<Br>R$ '+ dt_24.value
 
-dt_25.value = 25
+dt_25.value = 319
 dt_25.innerHTML = '25<Br>R$ '+ dt_25.value
 
 dt_26.value = 26
