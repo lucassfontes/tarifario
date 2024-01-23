@@ -355,7 +355,7 @@ buscar.addEventListener("click",() => {
     P_2_S_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_2).toFixed(2)
 
     let CAFE_3 = vl_cafe_s
-    let SUBTOTAL_3 = parseFloat(TARIFA) + parseFloat(CAFE_3) + 30
+    let SUBTOTAL_3 = parseFloat(TARIFA) + 30
     let ISS_3 =  parseFloat(SUBTOTAL_3 * 3 / 100)
     let TARIFA_TOTAL_3 = parseFloat(SUBTOTAL_3) + parseFloat(ISS_3)
 
@@ -366,7 +366,7 @@ buscar.addEventListener("click",() => {
     P_3_S_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_3).toFixed(2)
 
     let CAFE_4 = vl_cafe_s
-    let SUBTOTAL_4 = parseFloat(TARIFA) + parseFloat(CAFE_4) + (CAFE_4) + 60
+    let SUBTOTAL_4 = parseFloat(TARIFA) + 60
     let ISS_4 =  parseFloat(SUBTOTAL_4 * 3 / 100)
     let TARIFA_TOTAL_4 = parseFloat(SUBTOTAL_4) + parseFloat(ISS_4)
 
@@ -411,8 +411,8 @@ buscar.addEventListener("click",() => {
     P_3_C_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_3C).toFixed(2)
     P_3_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_3C).toFixed(2)
 
-    let CAFE_4C = vl_cafe * 3
-    let SUBTOTAL_4C = parseFloat(TARIFA) + parseFloat(CAFE_4C) + 30
+    let CAFE_4C = vl_cafe * 4
+    let SUBTOTAL_4C = parseFloat(TARIFA) + parseFloat(CAFE_4C) + 60
     let ISS_4C =  parseFloat(SUBTOTAL_4C * 3 / 100)
     let TARIFA_TOTAL_4C = parseFloat(SUBTOTAL_4C) + parseFloat(ISS_4C)
 
@@ -456,7 +456,7 @@ let TARIFA =  vl_tarifa.value
     P_2_S_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_2).toFixed(2)
 
     let CAFE_3 = vl_cafe_s
-    let SUBTOTAL_3 = parseFloat(TARIFA) + parseFloat(CAFE_3) + 30
+    let SUBTOTAL_3 = parseFloat(TARIFA) + 30
     let ISS_3 =  parseFloat(SUBTOTAL_3 * 3 / 100)
     let TARIFA_TOTAL_3 = parseFloat(SUBTOTAL_3) + parseFloat(ISS_3)
 
@@ -467,7 +467,7 @@ let TARIFA =  vl_tarifa.value
     P_3_S_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_3).toFixed(2)
 
     let CAFE_4 = vl_cafe_s
-    let SUBTOTAL_4 = parseFloat(TARIFA) + parseFloat(CAFE_4) + (CAFE_4) + 60
+    let SUBTOTAL_4 = parseFloat(TARIFA) + 60
     let ISS_4 =  parseFloat(SUBTOTAL_4 * 3 / 100)
     let TARIFA_TOTAL_4 = parseFloat(SUBTOTAL_4) + parseFloat(ISS_4)
 
@@ -512,8 +512,8 @@ let TARIFA =  vl_tarifa.value
     P_3_C_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_3C).toFixed(2)
     P_3_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_3C).toFixed(2)
 
-    let CAFE_4C = vl_cafe * 3
-    let SUBTOTAL_4C = parseFloat(TARIFA) + parseFloat(CAFE_4C) + (CAFE_4C) + 60
+    let CAFE_4C = vl_cafe * 4
+    let SUBTOTAL_4C = parseFloat(TARIFA) + parseFloat(CAFE_4C) + 60
     let ISS_4C =  parseFloat(SUBTOTAL_4C * 3 / 100)
     let TARIFA_TOTAL_4C = parseFloat(SUBTOTAL_4C) + parseFloat(ISS_4C)
 
