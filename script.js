@@ -467,7 +467,7 @@ let TARIFA =  vl_tarifa.value
     P_3_S_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_3).toFixed(2)
 
     let CAFE_4 = vl_cafe_s
-    let SUBTOTAL_4 = parseFloat(TARIFA) + parseFloat(CAFE_4) + (CAFE_4) 60
+    let SUBTOTAL_4 = parseFloat(TARIFA) + parseFloat(CAFE_4) + (CAFE_4) + 60
     let ISS_4 =  parseFloat(SUBTOTAL_4 * 3 / 100)
     let TARIFA_TOTAL_4 = parseFloat(SUBTOTAL_4) + parseFloat(ISS_4)
 
