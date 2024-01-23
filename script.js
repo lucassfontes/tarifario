@@ -206,7 +206,7 @@ if (date_hj == d_1){
 }else if(date_hj == d_21){
     vl_tarifa.value = dt_21.value
 }else if(date_hj == d_22){
-    vl_tarifa.value = dt_22.value
+    vl_tarifa.value = dt_22.value + .00
 }else if(date_hj == d_23){
     vl_tarifa.value = dt_23.value
 }else if(date_hj == d_24){
