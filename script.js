@@ -250,6 +250,12 @@ let P_3_S_C_CAFE = document.getElementById('P_3_S_C_CAFE')
 let P_3_S_C_SUBTOTAL = document.getElementById('P_3_S_C_SUBTOTAL')
 let P_3_S_C_ISS = document.getElementById('P_3_S_C_ISS')
 let P_3_S_C_TARIFA_TOTAL = document.getElementById('P_3_S_C_TARIFA_TOTAL')
+
+let P_4_S_C_TARIFA = document.getElementById('P_3_S_C_TARIFA')
+let P_4_S_C_CAFE = document.getElementById('P_3_S_C_CAFE')
+let P_4_S_C_SUBTOTAL = document.getElementById('P_3_S_C_SUBTOTAL')
+let P_4_S_C_ISS = document.getElementById('P_3_S_C_ISS')
+let P_4_S_C_TARIFA_TOTAL = document.getElementById('P_3_S_C_TARIFA_TOTAL')
     
 P_1_S_C_TARIFA.value  = 0
 P_1_S_C_CAFE.value  = 0
@@ -268,6 +274,12 @@ P_3_S_C_CAFE.value  = 0
 P_3_S_C_SUBTOTAL.value  = 0
 P_3_S_C_ISS.value = 0
 P_3_S_C_TARIFA_TOTAL.value  = 0
+
+P_4_S_C_TARIFA.value  = 0
+P_4_S_C_CAFE.value  = 0
+P_4_S_C_SUBTOTAL.value  = 0
+P_4_S_C_ISS.value = 0
+P_4_S_C_TARIFA_TOTAL.value  = 0
 
 ////
 
@@ -288,6 +300,12 @@ let P_3_C_C_CAFE = document.getElementById('P_3_C_C_CAFE')
 let P_3_C_C_SUBTOTAL = document.getElementById('P_3_C_C_SUBTOTAL')
 let P_3_C_C_ISS = document.getElementById('P_3_C_C_ISS')
 let P_3_C_C_TARIFA_TOTAL = document.getElementById('P_3_C_C_TARIFA_TOTAL')
+
+let P_4_C_C_TARIFA = document.getElementById('P_3_C_C_TARIFA')
+let P_4_C_C_CAFE = document.getElementById('P_3_C_C_CAFE')
+let P_4_C_C_SUBTOTAL = document.getElementById('P_3_C_C_SUBTOTAL')
+let P_4_C_C_ISS = document.getElementById('P_3_C_C_ISS')
+let P_4_C_C_TARIFA_TOTAL = document.getElementById('P_3_C_C_TARIFA_TOTAL')
     
 let vl_cafe = 38
 let vl_cafe_s = 0
@@ -310,13 +328,15 @@ P_3_C_C_SUBTOTAL.value  = 0
 P_3_C_C_ISS.value = 0
 P_3_C_C_TARIFA_TOTAL.value  = 0
 
-
-
+P_4_C_C_TARIFA.value  = 0
+P_4_C_C_CAFE.value  = 0
+P_4_C_C_SUBTOTAL.value  = 0
+P_4_C_C_ISS.value = 0
+P_4_C_C_TARIFA_TOTAL.value  = 0
 
 buscar.addEventListener("click",() => {
 
     let TARIFA =  vl_tarifa.value
-
 
     let CAFE_1 = vl_cafe_s
     let SUBTOTAL_1 = parseFloat(TARIFA) + parseFloat(CAFE_1)
@@ -350,6 +370,17 @@ buscar.addEventListener("click",() => {
     P_3_S_C_SUBTOTAL.innerHTML = 'R$ ' + parseFloat(SUBTOTAL_3).toFixed(2)
     P_3_S_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_3).toFixed(2)
     P_3_S_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_3).toFixed(2)
+
+    let CAFE_4 = vl_cafe_s
+    let SUBTOTAL_4 = parseFloat(TARIFA) + parseFloat(CAFE_4) + 30
+    let ISS_4 =  parseFloat(SUBTOTAL_4 * 3 / 100)
+    let TARIFA_TOTAL_4 = parseFloat(SUBTOTAL_4) + parseFloat(ISS_4)
+
+    P_4_S_C_TARIFA.innerHTML = 'R$ ' + parseFloat(TARIFA).toFixed(2)
+    P_4_S_C_CAFE.innerHTML = 'R$ ' + parseFloat(CAFE_4).toFixed(2)
+    P_4_S_C_SUBTOTAL.innerHTML = 'R$ ' + parseFloat(SUBTOTAL_4).toFixed(2)
+    P_4_S_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_4).toFixed(2)
+    P_4_S_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_4).toFixed(2)
 
     /////
 
@@ -385,6 +416,17 @@ buscar.addEventListener("click",() => {
     P_3_C_C_SUBTOTAL.innerHTML = 'R$ ' + parseFloat(SUBTOTAL_3C).toFixed(2)
     P_3_C_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_3C).toFixed(2)
     P_3_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_3C).toFixed(2)
+
+    let CAFE_4C = vl_cafe * 3
+    let SUBTOTAL_4C = parseFloat(TARIFA) + parseFloat(CAFE_4C) + 30
+    let ISS_4C =  parseFloat(SUBTOTAL_4C * 3 / 100)
+    let TARIFA_TOTAL_4C = parseFloat(SUBTOTAL_4C) + parseFloat(ISS_4C)
+
+    P_4_C_C_TARIFA.innerHTML = 'R$ ' + parseFloat(TARIFA).toFixed(2)
+    P_4_C_C_CAFE.innerHTML = 'R$ ' + parseFloat(CAFE_4C).toFixed(2)
+    P_4_C_C_SUBTOTAL.innerHTML = 'R$ ' + parseFloat(SUBTOTAL_4C).toFixed(2)
+    P_4_C_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_4C).toFixed(2)
+    P_4_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_4C).toFixed(2)
 
 })
 
@@ -430,6 +472,17 @@ let TARIFA =  vl_tarifa.value
     P_3_S_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_3).toFixed(2)
     P_3_S_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_3).toFixed(2)
 
+    let CAFE_4 = vl_cafe_s
+    let SUBTOTAL_4 = parseFloat(TARIFA) + parseFloat(CAFE_4) + 30
+    let ISS_4 =  parseFloat(SUBTOTAL_4 * 3 / 100)
+    let TARIFA_TOTAL_4 = parseFloat(SUBTOTAL_4) + parseFloat(ISS_4)
+
+    P_4_S_C_TARIFA.innerHTML = 'R$ ' + parseFloat(TARIFA).toFixed(2)
+    P_4_S_C_CAFE.innerHTML = 'R$ ' + parseFloat(CAFE_4).toFixed(2)
+    P_4_S_C_SUBTOTAL.innerHTML = 'R$ ' + parseFloat(SUBTOTAL_4).toFixed(2)
+    P_4_S_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_4).toFixed(2)
+    P_4_S_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_4).toFixed(2)
+
     /////
 
     let CAFE_1C = vl_cafe
@@ -464,3 +517,14 @@ let TARIFA =  vl_tarifa.value
     P_3_C_C_SUBTOTAL.innerHTML = 'R$ ' + parseFloat(SUBTOTAL_3C).toFixed(2)
     P_3_C_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_3C).toFixed(2)
     P_3_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_3C).toFixed(2)
+
+    let CAFE_4C = vl_cafe * 3
+    let SUBTOTAL_4C = parseFloat(TARIFA) + parseFloat(CAFE_4C) + 30
+    let ISS_4C =  parseFloat(SUBTOTAL_4C * 3 / 100)
+    let TARIFA_TOTAL_4C = parseFloat(SUBTOTAL_4C) + parseFloat(ISS_4C)
+
+    P_4_C_C_TARIFA.innerHTML = 'R$ ' + parseFloat(TARIFA).toFixed(2)
+    P_4_C_C_CAFE.innerHTML = 'R$ ' + parseFloat(CAFE_4C).toFixed(2)
+    P_4_C_C_SUBTOTAL.innerHTML = 'R$ ' + parseFloat(SUBTOTAL_4C).toFixed(2)
+    P_4_C_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_4C).toFixed(2)
+    P_4_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_4C).toFixed(2)
