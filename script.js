@@ -70,7 +70,7 @@ let d_30 = 30
 let d_31 = 31
 
 dt_1.value = 0
-dt_1.innerHTML = '1<Br>R$ ' + dt_1.value
+dt_1.innerHTML = '1<Br>R$ ' + dt_1.value + '.00'
 
 dt_2.value = 0
 dt_2.innerHTML = '2<Br>R$ '+ dt_2.value
