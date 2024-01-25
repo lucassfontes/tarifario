@@ -335,7 +335,7 @@ let P_4_C_C_PET = document.getElementById('P_4_C_C_PET')
 let P_4_C_C_PET_UP = document.getElementById('P_4_C_C_PET_UP')
 let P_4_C_C_QT = document.getElementById('P_4_C_C_QT')
 let P_4_C_C_DOW = document.getElementById('P_4_C_C_DOW')
-let P_4_C_C_ISS = document.getElementById('P_3_C_C_ISS')
+let P_4_C_C_ISS = document.getElementById('P_4_C_C_ISS')
 let P_4_C_C_TARIFA_TOTAL = document.getElementById('P_4_C_C_TARIFA_TOTAL')
     
 let vl_cafe = 38
@@ -370,10 +370,156 @@ P_4_C_C_ISS.value = 0
 P_4_C_C_TARIFA_TOTAL.value  = 0
 
 buscar.addEventListener("click",() => {
+    load_tarifa()
+})
+
+let vl_pet = 1
+let valor_pet = 0
+
+P_1_S_C_PET_UP.addEventListener("click",() => {
+    valor_pet = 50
+    if (P_1_S_C_QT.innerHTML >= 0){
+        P_1_S_C_QT.innerHTML =  parseInt(P_1_S_C_QT.innerHTML) + parseInt(vl_pet)
+        P_1_S_C_PET.innerHTML = 'R$ ' + parseFloat(P_1_S_C_QT.innerHTML) * parseFloat(valor_pet) + '.00'
+        load_tarifa()
+    }
+})
+P_1_S_C_DOW.addEventListener("click",() => {
+    valor_pet = 50
+    if (P_1_S_C_QT.innerHTML >=! 0){
+        P_1_S_C_QT.innerHTML =  parseInt(P_1_S_C_QT.innerHTML) - parseInt(vl_pet)
+        P_1_S_C_PET.innerHTML = 'R$ ' + parseFloat(P_1_S_C_QT.innerHTML) * parseFloat(valor_pet) + '.00'
+        load_tarifa()
+    }  
+})
+
+P_2_S_C_PET_UP.addEventListener("click",() => {
+    valor_pet = 50
+    if (P_2_S_C_QT.innerHTML >= 0){
+        P_2_S_C_QT.innerHTML =  parseInt(P_2_S_C_QT.innerHTML) + parseInt(vl_pet)
+        P_2_S_C_PET.innerHTML = 'R$ ' + parseFloat(P_2_S_C_QT.innerHTML) * parseFloat(valor_pet) + '.00'
+        load_tarifa()
+    }
+})
+P_2_S_C_DOW.addEventListener("click",() => {
+    valor_pet = 50
+    if (P_2_S_C_QT.innerHTML >=! 0){
+        P_2_S_C_QT.innerHTML =  parseInt(P_2_S_C_QT.innerHTML) - parseInt(vl_pet)
+        P_2_S_C_PET.innerHTML = 'R$ ' + parseFloat(P_2_S_C_QT.innerHTML) * parseFloat(valor_pet) + '.00'
+        load_tarifa()
+    }  
+})
+
+P_3_S_C_PET_UP.addEventListener("click",() => {
+    valor_pet = 50
+    if (P_3_S_C_QT.innerHTML >= 0){
+        P_3_S_C_QT.innerHTML =  parseInt(P_3_S_C_QT.innerHTML) + parseInt(vl_pet)
+        P_3_S_C_PET.innerHTML = 'R$ ' + parseFloat(P_3_S_C_QT.innerHTML) * parseFloat(valor_pet) + '.00'
+        load_tarifa()
+    }
+})
+P_3_S_C_DOW.addEventListener("click",() => {
+    valor_pet = 50
+    if (P_3_S_C_QT.innerHTML >=! 0){
+        P_3_S_C_QT.innerHTML =  parseInt(P_3_S_C_QT.innerHTML) - parseInt(vl_pet)
+        P_3_S_C_PET.innerHTML = 'R$ ' + parseFloat(P_3_S_C_QT.innerHTML) * parseFloat(valor_pet) + '.00'
+        load_tarifa()
+    }  
+})
+
+P_4_S_C_PET_UP.addEventListener("click",() => {
+    valor_pet = 50
+    if (P_4_S_C_QT.innerHTML >= 0){
+        P_4_S_C_QT.innerHTML =  parseInt(P_4_S_C_QT.innerHTML) + parseInt(vl_pet)
+        P_4_S_C_PET.innerHTML = 'R$ ' + parseFloat(P_4_S_C_QT.innerHTML) * parseFloat(valor_pet) + '.00'
+        load_tarifa()
+    }
+})
+P_4_S_C_DOW.addEventListener("click",() => {
+    valor_pet = 50
+    if (P_4_S_C_QT.innerHTML >=! 0){
+        P_4_S_C_QT.innerHTML =  parseInt(P_4_S_C_QT.innerHTML) - parseInt(vl_pet)
+        P_4_S_C_PET.innerHTML = 'R$ ' + parseFloat(P_4_S_C_QT.innerHTML) * parseFloat(valor_pet) + '.00'
+        load_tarifa()
+    }  
+})
+
+P_1_C_C_PET_UP.addEventListener("click",() => {
+    valor_pet = 50
+    if (P_1_C_C_QT.innerHTML >= 0){
+        P_1_C_C_QT.innerHTML =  parseInt(P_1_C_C_QT.innerHTML) + parseInt(vl_pet)
+        P_1_C_C_PET.innerHTML = 'R$ ' + parseFloat(P_1_C_C_QT.innerHTML) * parseFloat(valor_pet) + '.00'
+        load_tarifa()
+    }
+})
+P_1_C_C_DOW.addEventListener("click",() => {
+    valor_pet = 50
+    if (P_1_C_C_QT.innerHTML >=! 0){
+        P_1_C_C_QT.innerHTML =  parseInt(P_1_C_C_QT.innerHTML) - parseInt(vl_pet)
+        P_1_C_C_PET.innerHTML = 'R$ ' + parseFloat(P_1_C_C_QT.innerHTML) * parseFloat(valor_pet) + '.00'
+        load_tarifa()
+    }  
+})
+
+P_2_C_C_PET_UP.addEventListener("click",() => {
+    valor_pet = 50
+    if (P_2_C_C_QT.innerHTML >= 0){
+        P_2_C_C_QT.innerHTML =  parseInt(P_2_C_C_QT.innerHTML) + parseInt(vl_pet)
+        P_2_C_C_PET.innerHTML = 'R$ ' + parseFloat(P_2_C_C_QT.innerHTML) * parseFloat(valor_pet) + '.00'
+        load_tarifa()
+    }
+})
+P_2_C_C_DOW.addEventListener("click",() => {
+    valor_pet = 50
+    if (P_2_C_C_QT.innerHTML >=! 0){
+        P_2_C_C_QT.innerHTML =  parseInt(P_2_C_C_QT.innerHTML) - parseInt(vl_pet)
+        P_2_C_C_PET.innerHTML = 'R$ ' + parseFloat(P_2_C_C_QT.innerHTML) * parseFloat(valor_pet) + '.00'
+        load_tarifa()
+    }  
+})
+
+P_3_C_C_PET_UP.addEventListener("click",() => {
+    valor_pet = 50
+    if (P_3_C_C_QT.innerHTML >= 0){
+        P_3_C_C_QT.innerHTML =  parseInt(P_3_C_C_QT.innerHTML) + parseInt(vl_pet)
+        P_3_C_C_PET.innerHTML = 'R$ ' + parseFloat(P_3_C_C_QT.innerHTML) * parseFloat(valor_pet) + '.00'
+        load_tarifa()
+    }
+})
+P_3_C_C_DOW.addEventListener("click",() => {
+    valor_pet = 50
+    if (P_3_C_C_QT.innerHTML >=! 0){
+        P_3_C_C_QT.innerHTML =  parseInt(P_3_C_C_QT.innerHTML) - parseInt(vl_pet)
+        P_3_C_C_PET.innerHTML = 'R$ ' + parseFloat(P_3_C_C_QT.innerHTML) * parseFloat(valor_pet) + '.00'
+        load_tarifa()
+    }  
+})
+
+P_4_C_C_PET_UP.addEventListener("click",() => {
+    valor_pet = 50
+    if (P_4_C_C_QT.innerHTML >= 0){
+        P_4_C_C_QT.innerHTML =  parseInt(P_4_C_C_QT.innerHTML) + parseInt(vl_pet)
+        P_4_C_C_PET.innerHTML = 'R$ ' + parseFloat(P_4_C_C_QT.innerHTML) * parseFloat(valor_pet) + '.00'
+        load_tarifa()
+    }
+})
+P_4_C_C_DOW.addEventListener("click",() => {
+    valor_pet = 50
+    if (P_4_C_C_QT.innerHTML >=! 0){
+        P_4_C_C_QT.innerHTML =  parseInt(P_4_C_C_QT.innerHTML) - parseInt(vl_pet)
+        P_4_C_C_PET.innerHTML = 'R$ ' + parseFloat(P_4_C_C_QT.innerHTML) * parseFloat(valor_pet) + '.00'
+        load_tarifa()
+    }  
+})
+   
+function load_tarifa(){
+
+    
 
     let TARIFA =  vl_tarifa.value
     let CAFE_1 = vl_cafe_s
-    let SUBTOTAL_1 = parseFloat(TARIFA) + parseFloat(CAFE_1)
+    let total_pet_1 = parseFloat(P_1_S_C_QT.innerHTML) * parseFloat(valor_pet)
+    let SUBTOTAL_1 = parseFloat(TARIFA) + parseFloat(CAFE_1) + parseFloat(total_pet_1)
     let ISS_1 =  parseFloat(SUBTOTAL_1 * 3 / 100)
     let TARIFA_TOTAL_1 = parseFloat(SUBTOTAL_1) + parseFloat(ISS_1)
 
@@ -384,7 +530,8 @@ buscar.addEventListener("click",() => {
     P_1_S_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_1).toFixed(2)
 
     let CAFE_2 = vl_cafe_s
-    let SUBTOTAL_2 = parseFloat(TARIFA) + parseFloat(CAFE_2)
+    let total_pet_2 = parseFloat(P_2_S_C_QT.innerHTML) * parseFloat(valor_pet)
+    let SUBTOTAL_2 = parseFloat(TARIFA) + parseFloat(CAFE_2) + parseFloat(total_pet_2)
     let ISS_2 =  parseFloat(SUBTOTAL_2 * 3 / 100)
     let TARIFA_TOTAL_2 = parseFloat(SUBTOTAL_2) + parseFloat(ISS_2)
 
@@ -395,7 +542,8 @@ buscar.addEventListener("click",() => {
     P_2_S_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_2).toFixed(2)
 
     let CAFE_3 = vl_cafe_s
-    let SUBTOTAL_3 = parseFloat(TARIFA) + 30
+    let total_pet_3 = parseFloat(P_3_S_C_QT.innerHTML) * parseFloat(valor_pet)
+    let SUBTOTAL_3 = parseFloat(TARIFA) + parseFloat(total_pet_3) + 30
     let ISS_3 =  parseFloat(SUBTOTAL_3 * 3 / 100)
     let TARIFA_TOTAL_3 = parseFloat(SUBTOTAL_3) + parseFloat(ISS_3)
 
@@ -406,7 +554,8 @@ buscar.addEventListener("click",() => {
     P_3_S_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_3).toFixed(2)
 
     let CAFE_4 = vl_cafe_s
-    let SUBTOTAL_4 = parseFloat(TARIFA) + 60
+    let total_pet_4 = parseFloat(P_4_S_C_QT.innerHTML) * parseFloat(valor_pet)
+    let SUBTOTAL_4 = parseFloat(TARIFA) + parseFloat(total_pet_4) + 60
     let ISS_4 =  parseFloat(SUBTOTAL_4 * 3 / 100)
     let TARIFA_TOTAL_4 = parseFloat(SUBTOTAL_4) + parseFloat(ISS_4)
 
@@ -419,7 +568,8 @@ buscar.addEventListener("click",() => {
     /////
 
     let CAFE_1C = vl_cafe
-    let SUBTOTAL_1C = parseFloat(TARIFA) + parseFloat(CAFE_1C)
+    let total_pet_1C = parseFloat(P_1_C_C_QT.innerHTML) * parseFloat(valor_pet)
+    let SUBTOTAL_1C = parseFloat(TARIFA) + parseFloat(CAFE_1C) + parseFloat(total_pet_1C)
     let ISS_1C =  parseFloat(SUBTOTAL_1C * 3 / 100)
     let TARIFA_TOTAL_1C = parseFloat(SUBTOTAL_1C) + parseFloat(ISS_1C)
 
@@ -430,7 +580,8 @@ buscar.addEventListener("click",() => {
     P_1_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_1C).toFixed(2)
 
     let CAFE_2C = vl_cafe * 2
-    let SUBTOTAL_2C = parseFloat(TARIFA) + parseFloat(CAFE_2C)
+    let total_pet_2C = parseFloat(P_2_C_C_QT.innerHTML) * parseFloat(valor_pet)
+    let SUBTOTAL_2C = parseFloat(TARIFA) + parseFloat(CAFE_2C) + parseFloat(total_pet_2C)
     let ISS_2C =  parseFloat(SUBTOTAL_2C * 3 / 100)
     let TARIFA_TOTAL_2C = parseFloat(SUBTOTAL_2C) + parseFloat(ISS_2C)
 
@@ -441,7 +592,8 @@ buscar.addEventListener("click",() => {
     P_2_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_2C).toFixed(2)
 
     let CAFE_3C = vl_cafe * 3
-    let SUBTOTAL_3C = parseFloat(TARIFA) + parseFloat(CAFE_3C) + 30
+    let total_pet_3C = parseFloat(P_3_C_C_QT.innerHTML) * parseFloat(valor_pet)
+    let SUBTOTAL_3C = parseFloat(TARIFA) + parseFloat(CAFE_3C) + parseFloat(total_pet_3C) + 30
     let ISS_3C =  parseFloat(SUBTOTAL_3C * 3 / 100)
     let TARIFA_TOTAL_3C = parseFloat(SUBTOTAL_3C) + parseFloat(ISS_3C)
 
@@ -452,7 +604,8 @@ buscar.addEventListener("click",() => {
     P_3_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_3C).toFixed(2)
 
     let CAFE_4C = vl_cafe * 4
-    let SUBTOTAL_4C = parseFloat(TARIFA) + parseFloat(CAFE_4C) + 60
+    let total_pet_4C = parseFloat(P_4_C_C_QT.innerHTML) * parseFloat(valor_pet)
+    let SUBTOTAL_4C = parseFloat(TARIFA) + parseFloat(CAFE_4C) + parseFloat(total_pet_4C) + 60
     let ISS_4C =  parseFloat(SUBTOTAL_4C * 3 / 100)
     let TARIFA_TOTAL_4C = parseFloat(SUBTOTAL_4C) + parseFloat(ISS_4C)
 
@@ -462,21 +615,34 @@ buscar.addEventListener("click",() => {
     P_4_C_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_4C).toFixed(2)
     P_4_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_4C).toFixed(2)
 
-})
+}
 
 vl_tarifa.addEventListener("focus",() => {
     vl_tarifa.value = ''
+    P_1_S_C_QT.innerHTML = '0'
+    P_1_S_C_PET.innerHTML = 'R$ 0.00'
+    P_2_S_C_QT.innerHTML = '0'
+    P_2_S_C_PET.innerHTML = 'R$ 0.00'
+    P_3_S_C_QT.innerHTML = '0'
+    P_3_S_C_PET.innerHTML = 'R$ 0.00'
+    P_4_S_C_QT.innerHTML = '0'
+    P_4_S_C_PET.innerHTML = 'R$ 0.00'
+    P_1_C_C_QT.innerHTML = '0'
+    P_1_C_C_PET.innerHTML = 'R$ 0.00'
+    P_2_C_C_QT.innerHTML = '0'
+    P_2_C_C_PET.innerHTML = 'R$ 0.00'
+    P_3_C_C_QT.innerHTML = '0'
+    P_3_C_C_PET.innerHTML = 'R$ 0.00'
+    P_4_C_C_QT.innerHTML = '0'
+    P_4_C_C_PET.innerHTML = 'R$ 0.00'
 })
 
-
-
-let TARIFA =  vl_tarifa.value
-
-
+    let TARIFA =  vl_tarifa.value
     let CAFE_1 = vl_cafe_s
-    let SUBTOTAL_1 = parseFloat(TARIFA) + parseFloat(CAFE_1)
+    let SUBTOTAL_1 = parseFloat(TARIFA) + parseFloat(CAFE_1) 
     let ISS_1 =  parseFloat(SUBTOTAL_1 * 3 / 100)
     let TARIFA_TOTAL_1 = parseFloat(SUBTOTAL_1) + parseFloat(ISS_1)
+    
 
     P_1_S_C_TARIFA.innerHTML = 'R$ ' + parseFloat(TARIFA).toFixed(2)
     P_1_S_C_CAFE.innerHTML = 'R$ ' + parseFloat(CAFE_1).toFixed(2)
@@ -562,24 +728,4 @@ let TARIFA =  vl_tarifa.value
     P_4_C_C_SUBTOTAL.innerHTML = 'R$ ' + parseFloat(SUBTOTAL_4C).toFixed(2)
     P_4_C_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_4C).toFixed(2)
     P_4_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_4C).toFixed(2)
-
-
-let vl_pet = 1
-let valor_pet = 50
-if (P_1_S_C_QT.innerHTML >= 0){
-    P_1_S_C_PET_UP.addEventListener("click",() => {
-        P_1_S_C_QT.innerHTML =  parseInt(P_1_S_C_QT.innerHTML) + parseInt(vl_pet)
-        P_1_S_C_PET.innerHTML = 'R$ ' + parseFloat(P_1_S_C_PET.innerHTML) + parseFloat(valor_pet).toFixed(2)
-    })
-    
-}
-if(P_1_S_C_QT.innerHTML >= 0){
-    P_1_S_C_DOW.addEventListener("click",() => {
-        P_1_S_C_QT.innerHTML =  parseInt(P_1_S_C_QT.innerHTML) - parseInt(vl_pet)
-         P_1_S_C_PET.innerHTML = parseInt(P_1_S_C_PET.innerHTML) - parseFloat(P_1_S_C_PET.innerHTML)
-    })
-}
-
-
-
 
