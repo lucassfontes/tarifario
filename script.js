@@ -564,17 +564,19 @@ let TARIFA =  vl_tarifa.value
     P_4_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_4C).toFixed(2)
 
 
-let vl_pet = 50
-
+let vl_pet = 1
+P_1_S_C_PET.innerHTML = 50
 if (P_1_S_C_QT.innerHTML >= 0){
     P_1_S_C_PET_UP.addEventListener("click",() => {
         P_1_S_C_QT.innerHTML =  parseInt(P_1_S_C_QT.innerHTML) + parseInt(vl_pet)
+        P_1_S_C_PET.innerHTML = parseInt(P_1_S_C_PET.innerHTML) + parseInt(P_1_S_C_PET.innerHTML)
     })
     
 }
 if(P_1_S_C_QT.innerHTML >= 0){
     P_1_S_C_DOW.addEventListener("click",() => {
         P_1_S_C_QT.innerHTML =  parseInt(P_1_S_C_QT.innerHTML) - parseInt(vl_pet)
+         P_1_S_C_PET.innerHTML = parseInt(P_1_S_C_PET.innerHTML) - parseInt(P_1_S_C_PET.innerHTML)
     })
 }
 
