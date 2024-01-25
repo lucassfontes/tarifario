@@ -562,3 +562,13 @@ let TARIFA =  vl_tarifa.value
     P_4_C_C_SUBTOTAL.innerHTML = 'R$ ' + parseFloat(SUBTOTAL_4C).toFixed(2)
     P_4_C_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_4C).toFixed(2)
     P_4_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_4C).toFixed(2)
+
+P_1_S_C_QT.value = 0
+P_1_S_C_PET_UP.addEventListener("click",() => {
+    P_1_S_C_QT.value =  P_1_S_C_QT.value + 30
+})
+P_1_S_C_DOW.addEventListener("click",() => {
+    P_1_S_C_QT.value =  P_1_S_C_QT.value - 30
+})
+
+
