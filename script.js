@@ -231,48 +231,56 @@ if (date_hj == d_1){
 let P_1_S_C_TARIFA = document.getElementById('P_1_S_C_TARIFA')
 let P_1_S_C_CAFE = document.getElementById('P_1_S_C_CAFE')
 let P_1_S_C_SUBTOTAL = document.getElementById('P_1_S_C_SUBTOTAL')
+let P_1_S_C_PET = document.getElementById('P_1_S_C_PET')
 let P_1_S_C_ISS = document.getElementById('P_1_S_C_ISS')
 let P_1_S_C_TARIFA_TOTAL = document.getElementById('P_1_S_C_TARIFA_TOTAL')
 
 let P_2_S_C_TARIFA = document.getElementById('P_2_S_C_TARIFA')
 let P_2_S_C_CAFE = document.getElementById('P_2_S_C_CAFE')
 let P_2_S_C_SUBTOTAL = document.getElementById('P_2_S_C_SUBTOTAL')
+let P_2_S_C_PET = document.getElementById('P_2_S_C_PET')
 let P_2_S_C_ISS = document.getElementById('P_2_S_C_ISS')
 let P_2_S_C_TARIFA_TOTAL = document.getElementById('P_2_S_C_TARIFA_TOTAL')
 
 let P_3_S_C_TARIFA = document.getElementById('P_3_S_C_TARIFA')
 let P_3_S_C_CAFE = document.getElementById('P_3_S_C_CAFE')
 let P_3_S_C_SUBTOTAL = document.getElementById('P_3_S_C_SUBTOTAL')
+let P_3_S_C_PET = document.getElementById('P_3_S_C_PET')
 let P_3_S_C_ISS = document.getElementById('P_3_S_C_ISS')
 let P_3_S_C_TARIFA_TOTAL = document.getElementById('P_3_S_C_TARIFA_TOTAL')
 
 let P_4_S_C_TARIFA = document.getElementById('P_4_S_C_TARIFA')
 let P_4_S_C_CAFE = document.getElementById('P_4_S_C_CAFE')
 let P_4_S_C_SUBTOTAL = document.getElementById('P_4_S_C_SUBTOTAL')
+let P_4_S_C_PET = document.getElementById('P_4_S_C_PET')
 let P_4_S_C_ISS = document.getElementById('P_4_S_C_ISS')
 let P_4_S_C_TARIFA_TOTAL = document.getElementById('P_4_S_C_TARIFA_TOTAL')
     
 P_1_S_C_TARIFA.value  = 0
 P_1_S_C_CAFE.value  = 0
 P_1_S_C_SUBTOTAL.value  = 0
+P_1_S_C_PET.value  = 0
 P_1_S_C_ISS.value = 0
 P_1_S_C_TARIFA_TOTAL.value  = 0
 
 P_2_S_C_TARIFA.value  = 0
 P_2_S_C_CAFE.value  = 0
 P_2_S_C_SUBTOTAL.value  = 0
+P_2_S_C_PET.value  = 0
 P_2_S_C_ISS.value = 0
 P_2_S_C_TARIFA_TOTAL.value  = 0
 
 P_3_S_C_TARIFA.value  = 0
 P_3_S_C_CAFE.value  = 0
 P_3_S_C_SUBTOTAL.value  = 0
+P_3_S_C_PET.value  = 0
 P_3_S_C_ISS.value = 0
 P_3_S_C_TARIFA_TOTAL.value  = 0
 
 P_4_S_C_TARIFA.value  = 0
 P_4_S_C_CAFE.value  = 0
 P_4_S_C_SUBTOTAL.value  = 0
+P_4_S_C_PET.value  = 0
 P_4_S_C_ISS.value = 0
 P_4_S_C_TARIFA_TOTAL.value  = 0
 
@@ -281,24 +289,28 @@ P_4_S_C_TARIFA_TOTAL.value  = 0
 let P_1_C_C_TARIFA = document.getElementById('P_1_C_C_TARIFA')
 let P_1_C_C_CAFE = document.getElementById('P_1_C_C_CAFE')
 let P_1_C_C_SUBTOTAL = document.getElementById('P_1_C_C_SUBTOTAL')
+let P_1_C_C_PET = document.getElementById('P_1_C_C_PET')
 let P_1_C_C_ISS = document.getElementById('P_1_C_C_ISS')
 let P_1_C_C_TARIFA_TOTAL = document.getElementById('P_1_C_C_TARIFA_TOTAL')
 
 let P_2_C_C_TARIFA = document.getElementById('P_2_C_C_TARIFA')
 let P_2_C_C_CAFE = document.getElementById('P_2_C_C_CAFE')
 let P_2_C_C_SUBTOTAL = document.getElementById('P_2_C_C_SUBTOTAL')
+let P_2_C_C_PET = document.getElementById('P_2_C_C_PET')
 let P_2_C_C_ISS = document.getElementById('P_2_C_C_ISS')
 let P_2_C_C_TARIFA_TOTAL = document.getElementById('P_2_C_C_TARIFA_TOTAL')
 
 let P_3_C_C_TARIFA = document.getElementById('P_3_C_C_TARIFA')
 let P_3_C_C_CAFE = document.getElementById('P_3_C_C_CAFE')
 let P_3_C_C_SUBTOTAL = document.getElementById('P_3_C_C_SUBTOTAL')
+let P_3_C_C_PET = document.getElementById('P_3_C_C_PET')
 let P_3_C_C_ISS = document.getElementById('P_3_C_C_ISS')
 let P_3_C_C_TARIFA_TOTAL = document.getElementById('P_3_C_C_TARIFA_TOTAL')
 
 let P_4_C_C_TARIFA = document.getElementById('P_4_C_C_TARIFA')
 let P_4_C_C_CAFE = document.getElementById('P_4_C_C_CAFE')
 let P_4_C_C_SUBTOTAL = document.getElementById('P_4_C_C_SUBTOTAL')
+let P_4_C_C_PET = document.getElementById('P_4_C_C_PET')
 let P_4_C_C_ISS = document.getElementById('P_3_C_C_ISS')
 let P_4_C_C_TARIFA_TOTAL = document.getElementById('P_4_C_C_TARIFA_TOTAL')
     
@@ -308,31 +320,34 @@ let vl_cafe_s = 0
 P_1_C_C_TARIFA.value  = 0
 P_1_C_C_CAFE.value  = 0
 P_1_C_C_SUBTOTAL.value  = 0
+P_1_C_C_PET.value  = 0
 P_1_C_C_ISS.value = 0
 P_1_C_C_TARIFA_TOTAL.value  = 0
 
 P_2_C_C_TARIFA.value  = 0
 P_2_C_C_CAFE.value = 0
 P_2_C_C_SUBTOTAL.value  = 0
+P_2_C_C_PET.value  = 0
 P_2_C_C_ISS.value = 0
 P_2_C_C_TARIFA_TOTAL.value  = 0
 
 P_3_C_C_TARIFA.value  = 0
 P_3_C_C_CAFE.value  = 0
 P_3_C_C_SUBTOTAL.value  = 0
+P_3_C_C_PET.value  = 0
 P_3_C_C_ISS.value = 0
 P_3_C_C_TARIFA_TOTAL.value  = 0
 
 P_4_C_C_TARIFA.value  = 0
 P_4_C_C_CAFE.value  = 0
 P_4_C_C_SUBTOTAL.value  = 0
+P_4_C_C_PET.value  = 0
 P_4_C_C_ISS.value = 0
 P_4_C_C_TARIFA_TOTAL.value  = 0
 
 buscar.addEventListener("click",() => {
 
     let TARIFA =  vl_tarifa.value
-
     let CAFE_1 = vl_cafe_s
     let SUBTOTAL_1 = parseFloat(TARIFA) + parseFloat(CAFE_1)
     let ISS_1 =  parseFloat(SUBTOTAL_1 * 3 / 100)
