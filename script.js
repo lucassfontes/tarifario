@@ -569,14 +569,14 @@ let valor_pet = 50
 if (P_1_S_C_QT.innerHTML >= 0){
     P_1_S_C_PET_UP.addEventListener("click",() => {
         P_1_S_C_QT.innerHTML =  parseInt(P_1_S_C_QT.innerHTML) + parseInt(vl_pet)
-        P_1_S_C_PET.innerHTML = parseInt(P_1_S_C_PET.innerHTML) + parseInt(valor_pet)
+        P_1_S_C_PET.innerHTML = 'R$ ' + parseFloat(P_1_S_C_PET.innerHTML) + parseFloat(valor_pet).toFixed(2)
     })
     
 }
 if(P_1_S_C_QT.innerHTML >= 0){
     P_1_S_C_DOW.addEventListener("click",() => {
         P_1_S_C_QT.innerHTML =  parseInt(P_1_S_C_QT.innerHTML) - parseInt(vl_pet)
-         P_1_S_C_PET.innerHTML = parseInt(P_1_S_C_PET.innerHTML) - parseInt(P_1_S_C_PET.innerHTML)
+         P_1_S_C_PET.innerHTML = parseInt(P_1_S_C_PET.innerHTML) - parseFloat(P_1_S_C_PET.innerHTML)
     })
 }
 
