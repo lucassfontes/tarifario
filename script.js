@@ -565,11 +565,17 @@ let TARIFA =  vl_tarifa.value
 
 
 let vl_pet = 50
-P_1_S_C_PET_UP.addEventListener("click",() => {
-    P_1_S_C_QT.innerHTML =  parseInt(P_1_S_C_QT.innerHTML) + parseInt(vl_pet)
-})
-P_1_S_C_DOW.addEventListener("click",() => {
-    P_1_S_C_QT.innerHTML =  parseInt(P_1_S_C_QT.value) - parseInt(vl_pet)
-})
+
+if (P_1_S_C_QT.innerHTML >= 0){
+    P_1_S_C_PET_UP.addEventListener("click",() => {
+        P_1_S_C_QT.innerHTML =  parseInt(P_1_S_C_QT.innerHTML) + parseInt(vl_pet)
+    })
+}else if(P_1_S_C_QT.innerHTML >= 0){
+    P_1_S_C_DOW.addEventListener("click",() => {
+        P_1_S_C_QT.innerHTML =  parseInt(P_1_S_C_QT.innerHTML) - parseInt(vl_pet)
+    })
+}
+
+
 
 
