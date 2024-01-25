@@ -565,10 +565,10 @@ let TARIFA =  vl_tarifa.value
 
 P_1_S_C_QT.value = 0
 P_1_S_C_PET_UP.addEventListener("click",() => {
-    P_1_S_C_QT.innerHTML =  parseFloat(P_1_S_C_QT) + 30
+    P_1_S_C_QT.innerHTML =  parseFloat(P_1_S_C_QT.value) + 30
 })
 P_1_S_C_DOW.addEventListener("click",() => {
-    P_1_S_C_QT.value =  P_1_S_C_QT.value - 30
+    P_1_S_C_QT.innerHTML =  P_1_S_C_QT.value - 30
 })
 
 
