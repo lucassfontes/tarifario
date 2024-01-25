@@ -572,7 +572,7 @@ if (P_1_S_C_QT.innerHTML >= 0){
     })
     
 }
-if(P_1_S_C_QT.innerHTML >= 0){
+if(P_1_S_C_QT.innerHTML >= 1){
     P_1_S_C_DOW.addEventListener("click",() => {
         P_1_S_C_QT.innerHTML =  parseInt(P_1_S_C_QT.innerHTML) - parseInt(vl_pet)
     })
