@@ -564,12 +564,12 @@ let TARIFA =  vl_tarifa.value
     P_4_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_4C).toFixed(2)
 
 
-P_1_S_C_QT.value = 0
+let vl_pet = 50
 P_1_S_C_PET_UP.addEventListener("click",() => {
-    P_1_S_C_QT.innerHTML =  parseFloat(P_1_S_C_QT.value) + 50
+    P_1_S_C_QT.innerHTML =  parseFloat(P_1_S_C_QT.value) + parseFloat(vl_pet)
 })
 P_1_S_C_DOW.addEventListener("click",() => {
-    P_1_S_C_QT.innerHTML =  parseFloat(P_1_S_C_QT.value) - 50
+    P_1_S_C_QT.innerHTML =  parseFloat(P_1_S_C_QT.value) - parseFloat(vl_pet)
 })
 
 
