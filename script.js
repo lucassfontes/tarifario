@@ -162,8 +162,6 @@ dt_30.innerHTML = '30<Br>R$ '+ dt_30.value + '.00'
 dt_31.value = 0
 dt_31.innerHTML = '31<Br>R$ '+ dt_31.value + '.00'
 
-let cent = .00
-
 if (date_hj == d_1){
     vl_tarifa.value = dt_1.value
 }else if(date_hj == d_2){
@@ -651,7 +649,7 @@ vl_tarifa.addEventListener("focus",() => {
     P_1_S_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_1).toFixed(2)
 
     let CAFE_2 = vl_cafe_s
-    let SUBTOTAL_2 = parseFloat(TARIFA) + parseFloat(CAFE_2)
+    let SUBTOTAL_2 = parseFloat(TARIFA) + parseFloat(CAFE_2) +20
     let ISS_2 =  parseFloat(SUBTOTAL_2 * 3 / 100)
     let TARIFA_TOTAL_2 = parseFloat(SUBTOTAL_2) + parseFloat(ISS_2)
 
@@ -697,7 +695,7 @@ vl_tarifa.addEventListener("focus",() => {
     P_1_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_1C).toFixed(2)
 
     let CAFE_2C = vl_cafe * 2
-    let SUBTOTAL_2C = parseFloat(TARIFA) + parseFloat(CAFE_2C)
+    let SUBTOTAL_2C = parseFloat(TARIFA) + parseFloat(CAFE_2C) + 20
     let ISS_2C =  parseFloat(SUBTOTAL_2C * 3 / 100)
     let TARIFA_TOTAL_2C = parseFloat(SUBTOTAL_2C) + parseFloat(ISS_2C)
 
