@@ -165,7 +165,7 @@ dt_31.innerHTML = '31<Br>R$ '+ dt_31.value + '.00'
 let cent = .00
 
 if (date_hj == d_1){
-    vl_tarifa.value = dt_1.value + cent.value
+    vl_tarifa.value = dt_1.value
 }else if(date_hj == d_2){
     vl_tarifa.value = dt_2.value
 }else if(date_hj == d_3){
