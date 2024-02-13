@@ -579,12 +579,12 @@ function load_tarifa(){
 
     let CAFE_2C = vl_cafe * 2
     let total_pet_2C = parseFloat(P_2_C_C_QT.innerHTML) * parseFloat(valor_pet)
-    let SUBTOTAL_2C = parseFloat(TARIFA) + parseFloat(CAFE_2C) + parseFloat(total_pet_2C)
+    let SUBTOTAL_2C = parseFloat(TARIFA) + parseFloat(CAFE_2C) + parseFloat(total_pet_2C) + 20
     let ISS_2C =  parseFloat(SUBTOTAL_2C * 3 / 100)
     let TARIFA_TOTAL_2C = parseFloat(SUBTOTAL_2C) + parseFloat(ISS_2C)
 
     P_2_C_C_TARIFA.innerHTML = 'R$ ' + parseFloat(TARIFA).toFixed(2)
-    P_2_C_C_CAFE.innerHTML = 'R$ ' + parseFloat(CAFE_2C).toFixed(2) + 20
+    P_2_C_C_CAFE.innerHTML = 'R$ ' + parseFloat(CAFE_2C).toFixed(2)
     P_2_C_C_SUBTOTAL.innerHTML = 'R$ ' + parseFloat(SUBTOTAL_2C).toFixed(2)
     P_2_C_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_2C).toFixed(2)
     P_2_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_2C).toFixed(2)
