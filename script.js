@@ -640,7 +640,6 @@ vl_tarifa.addEventListener("focus",() => {
     let SUBTOTAL_1 = parseFloat(TARIFA) + parseFloat(CAFE_1) 
     let ISS_1 =  parseFloat(SUBTOTAL_1 * 3 / 100)
     let TARIFA_TOTAL_1 = parseFloat(SUBTOTAL_1) + parseFloat(ISS_1)
-    
 
     P_1_S_C_TARIFA.innerHTML = 'R$ ' + parseFloat(TARIFA).toFixed(2)
     P_1_S_C_CAFE.innerHTML = 'R$ ' + parseFloat(CAFE_1).toFixed(2)
@@ -682,7 +681,7 @@ vl_tarifa.addEventListener("focus",() => {
     P_4_S_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_4).toFixed(2)
 
     /////
-
+    
     let CAFE_1C = vl_cafe
     let SUBTOTAL_1C = parseFloat(TARIFA) + parseFloat(CAFE_1C)
     let ISS_1C =  parseFloat(SUBTOTAL_1C * 3 / 100)
@@ -699,7 +698,7 @@ vl_tarifa.addEventListener("focus",() => {
     let ISS_2C =  parseFloat(SUBTOTAL_2C * 3 / 100)
     let TARIFA_TOTAL_2C = parseFloat(SUBTOTAL_2C) + parseFloat(ISS_2C)
 
-    P_2_C_C_TARIFA.innerHTML = 'R$ ' + parseFloat(TARIFA).toFixed(2)
+    P_2_C_C_TARIFA.innerHTML = 'R$ ' + 20 + parseFloat(TARIFA).toFixed(2)
     P_2_C_C_CAFE.innerHTML = 'R$ ' + parseFloat(CAFE_2C).toFixed(2)
     P_2_C_C_SUBTOTAL.innerHTML = 'R$ ' + parseFloat(SUBTOTAL_2C).toFixed(2)
     P_2_C_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_2C).toFixed(2)
