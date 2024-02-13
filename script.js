@@ -516,8 +516,6 @@ let tf_4_p = 80
 
 function load_tarifa(){
 
-    
-
     let TARIFA =  vl_tarifa.value
     let CAFE_1 = vl_cafe_s
     let total_pet_1 = parseFloat(P_1_S_C_QT.innerHTML) * parseFloat(valor_pet)
@@ -532,13 +530,14 @@ function load_tarifa(){
     P_1_S_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_1).toFixed(2)
 
     let CAFE_2 = vl_cafe_s
+    let TF_2 = parseFloat(TARIFA) + parseFloat(tf_2_p)
     let total_pet_2 = parseFloat(P_2_S_C_QT.innerHTML) * parseFloat(valor_pet)
-    let SUBTOTAL_2 = parseFloat(TARIFA) + parseFloat(CAFE_2) + parseFloat(total_pet_2) + parseFloat(tf_2_p)
+    let SUBTOTAL_2 = parseFloat(TF_2) + parseFloat(CAFE_2) + parseFloat(total_pet_2)
     let ISS_2 =  parseFloat(SUBTOTAL_2 * 3 / 100)
     let TARIFA_TOTAL_2 = parseFloat(SUBTOTAL_2) + parseFloat(ISS_2)
 
-    P_2_S_C_TARIFA.innerHTML = 'R$ ' + parseFloat(TARIFA).toFixed(2)
-    P_2_S_C_CAFE.innerHTML = 'R$ ' + parseFloat(CAFE_2) + parseFloat(tf_2_p).toFixed(2)
+    P_2_S_C_TARIFA.innerHTML = 'R$ ' + parseFloat(TF_2).toFixed(2)
+    P_2_S_C_CAFE.innerHTML = 'R$ ' + parseFloat(CAFE_2).toFixed(2)
     P_2_S_C_SUBTOTAL.innerHTML = 'R$ ' + parseFloat(SUBTOTAL_2).toFixed(2)
     P_2_S_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_2).toFixed(2)
     P_2_S_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_2).toFixed(2)
