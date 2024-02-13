@@ -642,7 +642,6 @@ vl_tarifa.addEventListener("focus",() => {
     P_4_C_C_PET.innerHTML = 'R$ 0.00'
 })
 
-    let TARIFA =  vl_tarifa.value
     let CAFE_1 = vl_cafe_s
     let SUBTOTAL_1 = parseFloat(TARIFA) + parseFloat(CAFE_1) 
     let ISS_1 =  parseFloat(SUBTOTAL_1 * 3 / 100)
