@@ -517,10 +517,10 @@ var TARIFA_4 = parseFloat(TARIFA) + 80
 
 function load_tarifa(){
 
-    console.log(TARIFA)
-    console.log(TARIFA_2)
-    console.log(TARIFA_3)
-    console.log(TARIFA_4)
+    console.log(TARIFA.value)
+    console.log(TARIFA_2.value)
+    console.log(TARIFA_3.value)
+    console.log(TARIFA_4.value)
 
     let CAFE_1 = vl_cafe_s
     let total_pet_1 = parseFloat(P_1_S_C_QT.innerHTML) * parseFloat(valor_pet)
