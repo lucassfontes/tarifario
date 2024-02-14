@@ -513,10 +513,10 @@ P_4_C_C_DOW.addEventListener("click",() => {
 
 function load_tarifa(){
 
-    var TARIFA =  vl_tarifa.value
-    var TARIFA_2 = parseFloat(TARIFA) + 20
-    var TARIFA_3 = parseFloat(TARIFA) + 50
-    var TARIFA_4 = parseFloat(TARIFA) + 80
+    let TARIFA =  vl_tarifa.value
+    let TARIFA_2 = parseFloat(TARIFA) + 20
+    let TARIFA_3 = parseFloat(TARIFA) + 50
+    let TARIFA_4 = parseFloat(TARIFA) + 80
 
 
     let CAFE_1 = vl_cafe_s
@@ -638,6 +638,11 @@ vl_tarifa.addEventListener("focus",() => {
     P_4_C_C_QT.innerHTML = '0'
     P_4_C_C_PET.innerHTML = 'R$ 0.00'
 })
+
+    let TARIFA =  vl_tarifa.value
+    let TARIFA_2 = parseFloat(TARIFA) + 20
+    let TARIFA_3 = parseFloat(TARIFA) + 50
+    let TARIFA_4 = parseFloat(TARIFA) + 80
 
     let CAFE_1 = vl_cafe_s
     let SUBTOTAL_1 = parseFloat(TARIFA) + parseFloat(CAFE_1) 
