@@ -515,6 +515,11 @@ var TARIFA_2 = parseFloat(TARIFA) + 20
 var TARIFA_3 = parseFloat(TARIFA) + 50
 var TARIFA_4 = parseFloat(TARIFA) + 80
 
+console.log(TARIFA.value)
+console.log(TARIFA_2.value)
+console.log(TARIFA_3.value)
+console.log(TARIFA_4.value)
+
 function load_tarifa(){
 
     console.log(TARIFA.value)
