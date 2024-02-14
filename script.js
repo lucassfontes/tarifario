@@ -511,14 +511,9 @@ P_4_C_C_DOW.addEventListener("click",() => {
 })
 
 var TARIFA =  vl_tarifa.value
-
-let tf_2_p = 20
-let tf_3_p = 50
-let tf_4_p = 80
-
-let TARIFA_2 = parseFloat(TARIFA) + 20
-let TARIFA_3 = parseFloat(TARIFA) + 50
-let TARIFA_4 = parseFloat(TARIFA) + 80
+var TARIFA_2 = parseFloat(TARIFA) + 20
+var TARIFA_3 = parseFloat(TARIFA) + 50
+var TARIFA_4 = parseFloat(TARIFA) + 80
 
 function load_tarifa(){
 
