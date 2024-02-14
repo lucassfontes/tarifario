@@ -510,7 +510,7 @@ P_4_C_C_DOW.addEventListener("click",() => {
     }  
 })
 
-let TARIFA =  vl_tarifa.value
+var TARIFA =  vl_tarifa.value
 
 let tf_2_p = 20
 let tf_3_p = 50
@@ -521,6 +521,11 @@ let TARIFA_3 = parseFloat(TARIFA) + 50
 let TARIFA_4 = parseFloat(TARIFA) + 80
 
 function load_tarifa(){
+
+    console.log(TARIFA)
+    console.log(TARIFA_2)
+    console.log(TARIFA_3)
+    console.log(TARIFA_4)
 
     let CAFE_1 = vl_cafe_s
     let total_pet_1 = parseFloat(P_1_S_C_QT.innerHTML) * parseFloat(valor_pet)
