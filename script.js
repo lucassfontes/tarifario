@@ -406,7 +406,7 @@ buscar.addEventListener("click",() => {
     load_tarifa()
 })
 
-vl_tarifa.addEventListener("submit",() => {
+vl_tarifa.addEventListener("keypress",() => {
     load_tarifa()
 })
 
