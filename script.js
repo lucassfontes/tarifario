@@ -406,6 +406,10 @@ buscar.addEventListener("click",() => {
     load_tarifa()
 })
 
+vl_tarifa.addEventListener("dragenter",() => {
+    load_tarifa()
+})
+
 let vl_pet = 1
 let valor_pet = 0
 
