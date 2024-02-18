@@ -1,13 +1,10 @@
-let dt_tf = document.getElementsByClassName('dt_tf')
-dt_tf.setAttribute('style','display: none;')
-
 let vl_tarifa = document.getElementById('vl_tarifa')  
     
 vl_tarifa.value = '0.00'
 
 let date = new Date()
 let date_hj =  date.getDate()
-
+/*
 let dt_1 = document.getElementById('dt_1')
 let dt_2 = document.getElementById('dt_2')
 let dt_3 = document.getElementById('dt_3')
@@ -39,6 +36,38 @@ let dt_28 = document.getElementById('dt_28')
 let dt_29 = document.getElementById('dt_29')
 let dt_30 = document.getElementById('dt_30')
 let dt_31 = document.getElementById('dt_31')
+*/
+let dt_1 = 279
+let dt_2 = 249
+let dt_3 = 239
+let dt_4 = 229
+let dt_5 = 279
+let dt_6 = 279
+let dt_7 = 279
+let dt_8 = 269
+let dt_9 = 239
+let dt_10 = 239
+let dt_11 = 239
+let dt_12 = 239
+let dt_13 = 239
+let dt_14 = 269
+let dt_15 = 269
+let dt_16 = 249
+let dt_17 = 249
+let dt_18 = 229
+let dt_19 = 269
+let dt_20 = 279
+let dt_21 = 279
+let dt_22 = 279
+let dt_23 = 249
+let dt_24 = 249
+let dt_25 = 229
+let dt_26 = 269
+let dt_27 = 279
+let dt_28 = 279
+let dt_29 = 269
+let dt_30 = 0
+let dt_31 = 0
 
 let d_1 = 1
 let d_2 = 2
@@ -72,6 +101,8 @@ let d_29 = 29
 let d_30 = 30
 let d_31 = 31
 
+
+/*
 dt_1.value = 279
 dt_1.innerHTML = '1<Br>R$ ' + dt_1.value + '.00'
 
@@ -164,6 +195,7 @@ dt_30.innerHTML = '30<Br>R$ '+ dt_30.value + '.00'
 
 dt_31.value = 0
 dt_31.innerHTML = '31<Br>R$ '+ dt_31.value + '.00'
+*/
 
 if (date_hj == d_1){
     vl_tarifa.value = dt_1.value
