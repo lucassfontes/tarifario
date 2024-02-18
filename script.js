@@ -406,7 +406,7 @@ buscar.addEventListener("click",() => {
     load_tarifa()
 })
 
-vl_tarifa.addEventListener("dragenter",() => {
+vl_tarifa.addEventListener("submit",() => {
     load_tarifa()
 })
 
