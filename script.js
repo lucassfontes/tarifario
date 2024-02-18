@@ -1,4 +1,7 @@
-let vl_tarifa = document.getElementById('vl_tarifa')
+let dt_tf = document.getElementsByClassName('dt_tf')
+dt_tf.setAttribute('style','display: none;')
+
+let vl_tarifa = document.getElementById('vl_tarifa')  
     
 vl_tarifa.value = '0.00'
 
