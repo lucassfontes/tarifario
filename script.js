@@ -550,7 +550,7 @@ P_4_C_C_DOW.addEventListener("click",() => {
 })
 
 
-function load_tarifa(){
+/*function load_tarifa(){
 
     let TARIFA =  vl_tarifa.value
     let TARIFA_2 = parseFloat(TARIFA) + 20
@@ -656,7 +656,7 @@ function load_tarifa(){
     P_4_C_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_4C).toFixed(2)
     P_4_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_4C).toFixed(2)
 
-}
+}*/
 
 vl_tarifa.addEventListener("focus",() => {
     vl_tarifa.value = ''
