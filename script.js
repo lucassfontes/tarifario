@@ -773,22 +773,3 @@ vl_tarifa.addEventListener("focus",() => {
     P_4_C_C_ISS.innerHTML = 'R$ ' + parseFloat(ISS_4C).toFixed(2)
     P_4_C_C_TARIFA_TOTAL.innerHTML = 'R$ ' + parseFloat(TARIFA_TOTAL_4C).toFixed(2)
 
-
-$(function(){
-	$("#tabela input").keyup(function(){		
-
-		var index = $(this).parent().index();
-		var nth = "#tabela td:nth-child("+(index+1).toString()+")";
-		var valor = $(this).val().toUpperCase();
-		$("#tabela tbody tr").show();
-		$(nth).each(function(){
-			if($(this).text().toUpperCase().indexOf(valor) < 0){
-				$(this).parent().hide();
-			}
-		});
-	});
-
-	$("#tabela input").blur(function(){
-		$(this).val("");
-	});	
-});
