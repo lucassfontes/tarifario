@@ -775,7 +775,7 @@ vl_tarifa.addEventListener("focus",() => {
 
 
 $(function(){
-	$("#tabela #produto").keyup(function(){		
+	$("#tabela input").keyup(function(){		
 
 		var index = $(this).parent().index();
 		var nth = "#tabela td:nth-child("+(index+1).toString()+")";
@@ -788,7 +788,7 @@ $(function(){
 		});
 	});
 
-	$("#tabela #produto").blur(function(){
+	$("#tabela input").blur(function(){
 		$(this).val("");
 	});	
 });
